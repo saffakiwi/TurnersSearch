@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 100%;
+}
+
+.home {
+  text-align: center;
+  padding-top: 32vh;
+
+  .title {
+    display: flex;
+    font-size: 3em;
+    max-width: 15em;
+    margin: auto;
+  }
+
+  .sub-text {
+    font-size: 1.2em;
+    font-family: "PT Sans", serif;
+    max-width: 39em;
+    margin: auto;
+    padding: 2em;
+    color: #2e2e2e;
+  }
+}
+
+.getStarted {
+  text-align: center;
+
+  .title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.5em;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 32vh;
+  }
+
+  .circle {
+    display: flex;
+    position: absolute;
+    width: 7em;
+    height: 7em;
+    border: 1px solid;
+    border-radius: 100%;
+
+    &:hover {
+      cursor: pointer;
+      background: #fff;
+    }
+  }
+
+  .c1 {
+    top: 5em;
+    left: 30%;
+    background: #f50606;
+    border-color: #f50606;
+  }
+
+  .c2 {
+    top: 7em;
+    right: 25%;
+    background: #0465f7;
+    border-color: #0465f7;
+  }
+
+  .c3 {
+    bottom: 10em;
+    left: 15%;
+    background: #0465f7;
+    border-color: #0465f7;
+  }
+
+  .c4 {
+    bottom: 7em;
+    right: 25%;
+    background: #f50606;
+    border-color: #f50606;
+  }
+
+  .ripple {
+    transform: scale(2);
+    background: none;
+    animation-name: rippleAnimation;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes rippleAnimation {
+  0% {
+    transform: scale(1.5);
+  }
+  70% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+.button {
+  background: #00337d;
+  color: #fff;
+  border: unset;
+  border-radius: 5px;
+  padding: 12px 17px;
+  font-size: 1.1em;
+  text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+    background: #003f9c;
+  }
+}
