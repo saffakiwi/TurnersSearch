@@ -42,6 +42,16 @@ useEffect(() => {
                     )
                 }) : <h3>No data yet</h3> }
         </>
+        <Link to='/'>
+        <motion.button
+        className="button"
+        initial={{opacity: 0, y: 180}}
+        animate={{opacity: [0, 1], y: [140, 0]}}
+        transition={{ ease: "easeOut", delay: 0.7, duration: 0.7 }}
+      >
+          Welcome
+      </motion.button>
+      </Link>
 
     </div>
     )
